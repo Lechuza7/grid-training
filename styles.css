@@ -1,0 +1,11 @@
+.container {
+  background-color: red;
+  height: 500px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 10% 50% 10% 10% 20%;
+}
+
+.navbar {
+  display: grid;
+}
