@@ -1,12 +1,18 @@
+body {
+  margin: 0% 3% 0% 3%;
+}
+
 .container {
   background-color: green;
-  height: 500px;
+  height: 1500px;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 10% 50% 10% 10% 20%;
 }
 
 .navbar {
+  position: sticky;
+  top: 0;
   background-color: black;
   padding: 3px;
   display: grid;
@@ -16,4 +22,29 @@
 
 .nav-menu {
   color: white;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: 25% 50% 25%;
+}
+
+.streaming {
+  display: grid;
+  background-color: grey;
+  grid-column: 1 / 7;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.discover {
+  display: grid;
+  background-color: red;
+  grid-column: 1 / 7;
+}
+
+.ratings {
+  display: grid;
+  background-color: black;
+  grid-column: 1 / 7;
 }
