@@ -4,10 +4,10 @@ body {
 
 .container {
   background-color: green;
-  height: 1500px;
+  height: 3000px;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 10% 50% 10% 10% 20%;
+  grid-template-rows: 1.5% 50% 13.5% 13.5% 21.5%;
 }
 
 .navbar {
@@ -16,35 +16,101 @@ body {
   background-color: black;
   padding: 3px;
   display: grid;
-  grid-template-columns: 5% 25% 35% 30% 5%;
+  grid-template-columns: 5% 26% 28% 35% 6%;
   grid-template-rows: 100%;
+}
+
+.navbar img {
+  height: 25px;
+  margin: 8px 15px 8px 15px;
+}
+
+.navbar input {
+  height: 25px;
+  margin: 6px 0px 6px 0px;
+  border-radius: 1000px;
+  outline: 0;
+  border: 0;
 }
 
 .nav-menu {
   color: white;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.nav-menu a {
+  padding-left: 12px;;
+}
+
+.navbar button {
+  background-color: #e5a00d;
+  font-weight: bold;
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  height: 25px;
+  margin: 8px 15px 0px 0px;
 }
 
 .main {
   display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
   grid-template-rows: 25% 50% 25%;
 }
 
 .streaming {
   display: grid;
-  background-color: grey;
-  grid-column: 1 / 7;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  background-color: #191919 !important;
+  background-image: radial-gradient(at 80% 100%, hsla(241,0%,9%,1) 0px, transparent 50%), radial-gradient(at 1% 1%, hsla(348,47%,33%,1) 0px, transparent 50%) !important;
+  grid-column: 1/-1;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(5, 1fr);
 }
+
+.streaming h1 {
+  grid-column: 3/7;
+  grid-row: 2/3;
+  font-family: 'Genta', sans-serif;
+  font-size: 58px;
+  color: #f74366;
+  text-align: center;
+  margin-bottom: 0%;
+}
+
+.streaming h4 {
+  grid-column: 3/7;
+  grid-row: 3/4;
+  font-family: 'Genta', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.streaming button {
+  grid-column: 4/6;
+  grid-row: 4/5;
+  width: 220px;
+  height: 45px;
+  background-color: #f7c600;
+  border-radius: 1000px;
+  padding: 15px 36px 17px;
+  position: relative;
+  left: 25%;
+  font-style: normal;
+  font-weight: bold;
+  outline: 0;
+  border: 0;
+  line-height: 1;
+  }
 
 .discover {
   display: grid;
   background-color: red;
-  grid-column: 1 / 7;
+  grid-column: 1/-1;
 }
 
 .ratings {
   display: grid;
   background-color: black;
-  grid-column: 1 / 7;
+  grid-column: 1/-1;
 }
