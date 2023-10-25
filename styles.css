@@ -105,8 +105,44 @@ body {
 
 .discover {
   display: grid;
-  background-color: red;
+  grid-template-columns: 15% repeat(8, 8.75%) 15%;
+  grid-template-rows: 10% repeat(9, 8.88%) 10%;
+  background: linear-gradient(
+    to top,
+    black 0%,
+    black 50%,
+    #171717 50%,
+    #171717 100%
+  );
   grid-column: 1/-1;
+}
+
+.discover div {
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  grid-column: 2/6;
+}
+.space {
+  grid-column: 7/9
+}
+.menu-selector {
+  grid-column: 9/10;
+}
+
+.discover a:hover {
+  color: #f7c600;
+}
+
+.menu-card {
+  grid-column: 2/10;
+  grid-row: 2/11;
+  background-color: red;
 }
 
 .ratings {
