@@ -408,7 +408,53 @@ body {
   height: 550px;
   background-color: #282a2d;
   display: grid;
-  grid-template-columns: repeat(8, auto);
+  grid-template-columns: 10% 6% 26% repeat(5, 9.6%) 10%;
   grid-template-rows: repeat(5, auto);
+
+  h2 {
+    color: white;
+    font-size: 16px;
+  }
+
+  h2:hover {
+    color:#f7c600;
+  }
+
+  a {
+    color: grey;
+    font-size: 14px;
+  }
+
+  a:hover {
+    color:#f7c600;
+  }
+
+  hr {
+    grid-column: 1/9;
+    grid-row: 4;
+  }
 }
+
+.plex-logo {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  height: 43px;
+  margin: 8px 15px 8px 15px; 
+}
+
+.map-links {
+  grid-column: 4/9;
+  grid-row: 2/3;
+  display: flex;
+  flex: row;
+  
+  div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    line-height: 26px;
+  }
+}
+
+
 
