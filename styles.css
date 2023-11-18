@@ -348,14 +348,14 @@ body {
     font-size: 40px;
     position: relative;
     left: 25%;
-    margin-top: 50px;
+    margin-top: 70px;
   }
 
   div {
     color: white;
     background-size: cover;
     background-repeat: no-repeat;
-    filter:  grayscale(60%);
+    filter:  grayscale(70%);
     margin: 20px 10px 20px 10px;
     border-radius: 15px;
     display: flex;
